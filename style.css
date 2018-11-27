@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    background: linear-gradient(90deg, #2C3E50, #FD746C);
+    font-size: 16px;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 250px);
+    grid-gap: 5px;
+    justify-content: center;
+}
+
+.hero {
+    text-align: center;
+    font-size: 2rem;
+    color: rgba(255, 255, 255, .9);
+}
+
+.hero p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+}
+
+.item {
+    border-radius: 5px;
+    padding: 10px;
+    /* background: #f2f2f2; */
+    background: rgba(255, 255, 255, .8);
+}
+.item img {
+    max-width: 100%;
+}
+.level-1 {
+    grid-row-end: span 3;
+}
+.level-2 {
+    grid-row-end: span 2;
+}
+.level-3 {
+    grid-row-end: span 1;
+}
+
+.footer {
+    height: 80px;
+    background: #f5f5f5;
+    margin-top: 80px;
+    border-top: 1px solid #E7E7E7;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-text p {
+    font-size: 1rem;
+    color: #333;
+    text-align: center;
+}
+
+.footer-text a {
+    text-decoration: none;
+    color: #8a3ab9;
+}
+
+.footer .footer-text i {
+    color: #cd486b;
+}
+
+
+@media screen and (max-width: 768px) {
+    .hero {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+}
